@@ -83,10 +83,15 @@ function App() {
         });
       })
       .catch((error) => alert(error.message));
+    setOpen(false);
   };
 
   const signIn = (event) => {
     event.preventDefault();
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .catch((error) => alert(error.message));
+    setOpenSignIn(false);
   };
 
   return (
@@ -145,7 +150,7 @@ function App() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <Button onClick={signUp}>Sign Up</Button>
+            <Button onClick={signIn}>Sign In</Button>
           </form>
         </div>
       </Modal>
