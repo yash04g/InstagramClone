@@ -10,3 +10,7 @@
   border-bottom: 1px solid lightgray;
   object-fit: contain; /*It says keep the aspect ratio of instagram contained as we dont want to stretch it*/
 }
+.app__signup {
+  display: flex;
+  flex-direction: column;
+}
