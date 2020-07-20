@@ -4,11 +4,24 @@
 .app {
   background-color: #fafafa;
 }
+.app__posts {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.app__postsRight {
+  margin-left: 20px;
+}
 .app__header {
   background-color: white;
   padding: 20px;
   border-bottom: 1px solid lightgray;
   object-fit: contain; /*It says keep the aspect ratio of instagram contained as we dont want to stretch it*/
+  display: flex;
+  justify-content: space-between;
+}
+.app__headerImage {
+  object-fit: contain;
 }
 .app__signup {
   display: flex;
